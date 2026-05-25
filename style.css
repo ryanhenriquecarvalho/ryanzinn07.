@@ -1,0 +1,183 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2e5a1c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #a3e635;
+}
+
+/* Seção Hero (Banner) */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    background-color: #a3e635;
+    color: #2e5a1c;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #84cc16;
+    transform: translateY(-2px);
+}
+
+/* Seção Pilares */
+.pilares {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.pilares h2 {
+    font-size: 36px;
+    color: #2e5a1c;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f4fbf0;
+    padding: 30px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    border-top: 5px solid #2e5a1c;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    color: #2e5a1c;
+    margin-bottom: 15px;
+}
+
+/* Seção Contato */
+.contato {
+    padding: 80px 10%;
+    background-color: #f0fdf4;
+    text-align: center;
+}
+
+.contato h2 {
+    color: #2e5a1c;
+    margin-bottom: 10px;
+}
+
+#form-contato {
+    max-width: 500px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form-contato input, #form-contato textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#form-contato textarea {
+    height: 120px;
+    resize: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#feedback {
+    margin-top: 20px;
+    color: #166534;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1e3a11;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
